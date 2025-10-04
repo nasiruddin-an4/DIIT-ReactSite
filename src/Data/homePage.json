@@ -204,6 +204,7 @@
       "stats": { "label": "Placed Graduates", "value": "800+" }
     }
   ],
+
   "statsData": [
     {
       "id": "students",
@@ -232,6 +233,63 @@
       "value": 800,
       "suffix": "+",
       "icon": "Briefcase"
+    }
+  ],
+
+  "programsData": [
+    {
+      "id": 1,
+      "title": "Computer Science & Engineering",
+      "category": "engineering",
+      "duration": "4 Years",
+      "degree": "B.Sc. in CSE",
+      "description": "Comprehensive program covering software development, AI, machine learning, and system design with hands-on industry projects.",
+      "image": "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Business Administration",
+      "category": "business",
+      "duration": "4 Years",
+      "degree": "BBA",
+      "description": "Strategic business education focusing on leadership, entrepreneurship, digital marketing, and global business practices.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Electrical & Electronic Engineering",
+      "category": "engineering",
+      "duration": "4 Years",
+      "degree": "B.Sc. in EEE",
+      "description": "Advanced engineering program covering power systems, electronics, telecommunications, and renewable energy technologies.",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      "id": 4,
+      "title": "Graphic Design & Multimedia",
+      "category": "design",
+      "duration": "4 Years",
+      "degree": "B.Des",
+      "description": "Creative program combining traditional design principles with modern digital tools, UX/UI design, and multimedia production.",
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80"
+    },
+    {
+      "id": 5,
+      "title": "Data Science & Analytics",
+      "category": "science",
+      "duration": "4 Years",
+      "degree": "B.Sc. in Data Science",
+      "description": "Cutting-edge program focusing on big data, statistical analysis, machine learning, and business intelligence.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      "id": 6,
+      "title": "Digital Marketing",
+      "category": "business",
+      "duration": "4 Years",
+      "degree": "BBA in Digital Marketing",
+      "description": "Modern marketing program covering social media, SEO, content marketing, analytics, and e-commerce strategies.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
     }
   ]
 }

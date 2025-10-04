@@ -8,14 +8,6 @@ const ProgramExplorer = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [selectedProgram, setSelectedProgram] = useState(null);
 
-  const categories = [
-    { id: "all", name: "All Programs", icon: "Grid3X3" },
-    { id: "engineering", name: "Engineering", icon: "Cpu" },
-    { id: "business", name: "Business", icon: "TrendingUp" },
-    { id: "design", name: "Design", icon: "Palette" },
-    { id: "science", name: "Science", icon: "Atom" },
-  ];
-
   const programs = [
     {
       id: 1,
@@ -27,21 +19,6 @@ const ProgramExplorer = () => {
         "Comprehensive program covering software development, AI, machine learning, and system design with hands-on industry projects.",
       image:
         "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      careerPaths: [
-        "Software Engineer",
-        "Data Scientist",
-        "AI Specialist",
-        "System Architect",
-      ],
-      avgSalary: "৳45,000",
-      placementRate: "98%",
-      skills: [
-        "Programming",
-        "Data Structures",
-        "Machine Learning",
-        "System Design",
-      ],
-      featured: true,
     },
     {
       id: 2,
@@ -53,21 +30,6 @@ const ProgramExplorer = () => {
         "Strategic business education focusing on leadership, entrepreneurship, digital marketing, and global business practices.",
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      careerPaths: [
-        "Business Analyst",
-        "Marketing Manager",
-        "Entrepreneur",
-        "Consultant",
-      ],
-      avgSalary: "৳38,000",
-      placementRate: "95%",
-      skills: [
-        "Leadership",
-        "Strategic Planning",
-        "Digital Marketing",
-        "Analytics",
-      ],
-      featured: false,
     },
     {
       id: 3,
@@ -79,21 +41,6 @@ const ProgramExplorer = () => {
         "Advanced engineering program covering power systems, electronics, telecommunications, and renewable energy technologies.",
       image:
         "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      careerPaths: [
-        "Electronics Engineer",
-        "Power Systems Engineer",
-        "Telecom Specialist",
-        "R&D Engineer",
-      ],
-      avgSalary: "৳42,000",
-      placementRate: "96%",
-      skills: [
-        "Circuit Design",
-        "Power Systems",
-        "Telecommunications",
-        "Automation",
-      ],
-      featured: false,
     },
     {
       id: 4,
@@ -105,16 +52,6 @@ const ProgramExplorer = () => {
         "Creative program combining traditional design principles with modern digital tools, UX/UI design, and multimedia production.",
       image:
         "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80",
-      careerPaths: [
-        "UI/UX Designer",
-        "Graphic Designer",
-        "Multimedia Artist",
-        "Creative Director",
-      ],
-      avgSalary: "৳35,000",
-      placementRate: "92%",
-      skills: ["Design Thinking", "Adobe Creative Suite", "UI/UX", "Branding"],
-      featured: true,
     },
     {
       id: 5,
@@ -126,21 +63,6 @@ const ProgramExplorer = () => {
         "Cutting-edge program focusing on big data, statistical analysis, machine learning, and business intelligence.",
       image:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      careerPaths: [
-        "Data Scientist",
-        "Business Analyst",
-        "ML Engineer",
-        "Research Scientist",
-      ],
-      avgSalary: "৳50,000",
-      placementRate: "97%",
-      skills: [
-        "Python/R",
-        "Statistics",
-        "Machine Learning",
-        "Data Visualization",
-      ],
-      featured: true,
     },
     {
       id: 6,
@@ -152,16 +74,6 @@ const ProgramExplorer = () => {
         "Modern marketing program covering social media, SEO, content marketing, analytics, and e-commerce strategies.",
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80",
-      careerPaths: [
-        "Digital Marketer",
-        "SEO Specialist",
-        "Content Strategist",
-        "Social Media Manager",
-      ],
-      avgSalary: "৳32,000",
-      placementRate: "94%",
-      skills: ["SEO/SEM", "Social Media", "Content Marketing", "Analytics"],
-      featured: false,
     },
   ];
 
@@ -179,61 +91,43 @@ const ProgramExplorer = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="py-10 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-0">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-accent/10 rounded-full px-4 py-2 mb-6">
-            <Icon name="BookOpen" size={20} className="text-accent" />
-            <span className="text-accent font-medium text-sm">
-              Academic Programs
-            </span>
+        <div className="flex justify-between gap-4 mb-16">
+          <div>
+            <h2 className="font-headline font-bold text-4xl lg:text-5xl text-primary mb-2">
+              Discover Your Perfect Program
+            </h2>
+            <p className="font-body text-xl text-text-secondary leading-relaxed">
+              38 programs • 6 faculties • Undergraduate & Graduate pathways
+            </p>
           </div>
-          <h2 className="font-headline font-bold text-4xl lg:text-5xl text-primary mb-6">
-            Discover Your Perfect Program
-          </h2>
-          <p className="font-body text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            Explore our comprehensive range of industry-aligned programs
-            designed to transform your potential into professional excellence
-            with guaranteed career outcomes.
-          </p>
-        </div>
-
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories?.map((category) => (
-            <button
-              key={category?.id}
-              onClick={() => setActiveCategory(category?.id)}
-              className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium text-sm transition-all duration-300 ${
-                activeCategory === category?.id
-                  ? "bg-primary text-white shadow-brand-lg"
-                  : "bg-slate-100 text-text-secondary hover:bg-slate-200 hover:text-primary"
-              }`}
+          <div>
+            <Link
+              to="/programs"
+              className="group inline-flex items-center gap-2 border border-primary px-4 py-3 rounded-lg font-medium text-primary transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-800 hover:to-black hover:text-white"
             >
-              <Icon name={category?.icon} size={18} />
-              <span>{category?.name}</span>
-            </button>
-          ))}
+              View All Programs
+              <Icon
+                name="ArrowRight"
+                size={16}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </Link>
+          </div>
         </div>
 
         {/* Programs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {filteredPrograms?.map((program, index) => (
             <div
               key={program?.id}
-              className={`group relative bg-white rounded-2xl shadow-brand hover:shadow-brand-lg transition-all duration-300 hover:-translate-y-2 border border-slate-200 overflow-hidden ${
+              className={`group relative bg-white rounded-xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 overflow-hidden ${
                 program?.featured ? "ring-2 ring-accent/20" : ""
               }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Featured Badge */}
-              {program?.featured && (
-                <div className="absolute top-4 left-4 z-10 bg-accent text-white px-3 py-1 rounded-full text-xs font-medium">
-                  Featured
-                </div>
-              )}
-
               {/* Program Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
