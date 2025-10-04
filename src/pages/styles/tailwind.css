@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Core Colors */
+        --color-background: #FAFAFA;
+        /* gray-50 */
+        --color-foreground: #0F172A;
+        /* slate-900 */
+        --color-border: #E2E8F0;
+        /* slate-200 */
+        --color-input: #F8FAFC;
+        /* slate-50 */
+        --color-ring: #204496;
+        /* blue-800 */
+
+        /* Card Colors */
+        --color-card: #FFFFFF;
+        /* white */
+        --color-card-foreground: #0F172A;
+        /* slate-900 */
+        --color-popover: #FFFFFF;
+        /* white */
+        --color-popover-foreground: #0F172A;
+        /* slate-900 */
+
+        /* Muted Colors */
+        --color-muted: #F1F5F9;
+        /* slate-100 */
+        --color-muted-foreground: #64748B;
+        /* slate-500 */
+
+        /* Primary Colors */
+        --color-primary: #1E3A8A;
+        /* blue-800 */
+        --color-primary-foreground: #FFFFFF;
+        /* white */
+
+        /* Secondary Colors */
+        --color-secondary: #0F172A;
+        /* slate-900 */
+        --color-secondary-foreground: #FFFFFF;
+        /* white */
+
+        /* Accent Colors */
+        --color-accent: #F97316;
+        /* orange-500 */
+        --color-accent-foreground: #FFFFFF;
+        /* white */
+
+        /* Success Colors */
+        --color-success: #0DB04B;
+        /* emerald-600 */
+        --color-success-foreground: #FFFFFF;
+        /* white */
+
+        /* Warning Colors */
+        --color-warning: #D97706;
+        /* amber-600 */
+        --color-warning-foreground: #FFFFFF;
+        /* white */
+
+        /* Error Colors */
+        --color-error: #DC2626;
+        /* red-600 */
+        --color-error-foreground: #FFFFFF;
+        /* white */
+
+        /* Destructive Colors */
+        --color-destructive: #DC2626;
+        /* red-600 */
+        --color-destructive-foreground: #FFFFFF;
+        /* white */
+
+        /* Custom Brand Colors */
+        --color-surface: #F1F5F9;
+        /* slate-100 */
+        --color-text-primary: #0F172A;
+        /* slate-900 */
+        --color-text-secondary: #64748B;
+        /* slate-500 */
+        --color-innovation: #06B6D4;
+        /* cyan-500 */
+        --color-innovation-foreground: #FFFFFF;
+        /* white */
+
+        /* Hero Gradient */
+        --hero-gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+
+        /* Animation Variables */
+        --scroll-y: 0px;
+        --progress: 0%;
+
+        /* Spacing System */
+        --spacing-xs: 0.5rem;
+        /* 8px */
+        --spacing-sm: 0.75rem;
+        /* 12px */
+        --spacing-md: 1.25rem;
+        /* 20px */
+        --spacing-lg: 2rem;
+        /* 32px */
+        --spacing-xl: 3.25rem;
+        /* 52px */
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    /* Typography System */
+    .font-headline {
+        font-family: "Manrope", sans-serif;
+    }
+
+    .font-body {
+        font-family: "Manrope", sans-serif;
+    }
+
+    .font-cta {
+        font-family: "Manrope", sans-serif;
+    }
+
+    .font-accent {
+        font-family: "Manrope", sans-serif;
+    }
+
+    /* Custom Animations */
+    @keyframes pulse-accent {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.7;
+        }
+    }
+
+    @keyframes float-up {
+        0% {
+            transform: translateY(60px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes ripple {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+
+    @keyframes progress-fill {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: var(--progress);
+        }
+    }
+
+    @keyframes glow {
+
+        0%,
+        100% {
+            box-shadow: 0 0 5px rgba(249, 115, 22, 0.3);
+        }
+
+        50% {
+            box-shadow: 0 0 20px rgba(249, 115, 22, 0.6);
+        }
+    }
+
+    /* Utility Classes */
+    .animate-pulse-accent {
+        animation: pulse-accent 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .animate-float-up {
+        animation: float-up 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    .animate-ripple {
+        animation: ripple 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    .animate-progress {
+        animation: progress-fill 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    .animate-glow {
+        animation: glow 2s ease-in-out infinite;
+    }
+
+    /* Smooth Transitions */
+    .transition-smooth {
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .transition-transform-smooth {
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    /* Glass Morphism */
+    .glass-effect {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Hover Effects */
+    .hover-lift {
+        @apply transition-transform-smooth;
+    }
+
+    .hover-lift:hover {
+        transform: translateY(-2px);
+    }
+
+    .hover-scale {
+        @apply transition-transform-smooth;
+    }
+
+    .hover-scale:hover {
+        transform: scale(1.02);
+    }
+
+    .hover-scale-lg:hover {
+        transform: scale(1.03);
+    }
+
+    /* Custom Shadows */
+    .shadow-brand {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .shadow-brand-lg {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .shadow-brand-xl {
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    }
+
+    /* Scroll Behavior */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Focus Styles */
+    .focus-ring {
+        @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    }
+
+    /* Brand Specific Utilities */
+    .bg-hero-gradient {
+        background: var(--hero-gradient);
+    }
+
+    .text-gradient {
+        background: linear-gradient(135deg, #1e3a8a 0%, #06b6d4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
