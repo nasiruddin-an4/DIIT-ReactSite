@@ -64,7 +64,7 @@ const StatsSection = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-0">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-headline font-bold text-4xl lg:text-5xl text-primary mb-4">
+          <h2 className="font-headline font-semibold text-4xl lg:text-5xl text-primary mb-4">
             Excellence in Numbers
           </h2>
           <p className="font-body text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">

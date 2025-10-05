@@ -6,6 +6,7 @@ import ProgramExplorer from "./components/ProgramExplorer";
 import NewsSection from "./components/NewsSection";
 import VirtualTourSection from "./components/VirtualTourSection";
 import CredibilitySection from "./components/CredibilitySection";
+import Documentary from "./components/Documentary";
 import Footer from "..//..//components/ui/Footer";
 
 const Homepage = () => {
@@ -23,14 +24,19 @@ const Homepage = () => {
         {/* Interactive Program Explorer */}
         <ProgramExplorer />
 
-        {/* Virtual Campus Tour */}
-        <VirtualTourSection />
+        {/* Credibility & Recognition */}
+        <CredibilitySection />
 
         {/* Real-time News & Achievements */}
         <NewsSection />
 
-        {/* Credibility & Recognition */}
-        <CredibilitySection />
+        {/* Documentary Section */}
+        <Documentary />
+
+        {/* Virtual Campus Tour */}
+        <VirtualTourSection />
+        
+        
       </main>
       {/* Footer */}
       <Footer />

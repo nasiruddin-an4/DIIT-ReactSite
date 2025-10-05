@@ -244,52 +244,137 @@
       "duration": "4 Years",
       "degree": "B.Sc. in CSE",
       "description": "Comprehensive program covering software development, AI, machine learning, and system design with hands-on industry projects.",
-      "image": "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+      "image": "https://i.postimg.cc/XqGPTNhH/bba.png"
     },
     {
       "id": 2,
-      "title": "Business Administration",
+      "title": "Bachelor of Business Administration (BBA)",
       "category": "business",
       "duration": "4 Years",
       "degree": "BBA",
       "description": "Strategic business education focusing on leadership, entrepreneurship, digital marketing, and global business practices.",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      "image": "https://i.postimg.cc/02v3tvnY/kenny-eliason-z-FSo6bn-ZJTw-unsplash.jpg"
     },
     {
       "id": 3,
-      "title": "Electrical & Electronic Engineering",
-      "category": "engineering",
+      "title": "BBA in Tourism and Hospitality Management",
+      "category": "tourism",
       "duration": "4 Years",
-      "degree": "B.Sc. in EEE",
-      "description": "Advanced engineering program covering power systems, electronics, telecommunications, and renewable energy technologies.",
-      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      "degree": "BBA in BTHM",
+      "description": "Comprehensive program focusing on the management of tourism, hospitality, and event planning.",
+      "image": "https://i.postimg.cc/vmC25wDr/element5-digital-Oy-Cl7-Y4y0-Bk-unsplash.jpg"
     },
     {
       "id": 4,
-      "title": "Graphic Design & Multimedia",
-      "category": "design",
+      "title": "Masters of Business Administration (MBA)",
+      "category": "MBA",
       "duration": "4 Years",
-      "degree": "B.Des",
+      "degree": "MBA",
       "description": "Creative program combining traditional design principles with modern digital tools, UX/UI design, and multimedia production.",
-      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80"
+      "image": "https://i.postimg.cc/Prd3W4fp/kenny-eliason-1-a-A2-Fadydc-unsplash.jpg"
     },
     {
       "id": 5,
-      "title": "Data Science & Analytics",
-      "category": "science",
+      "title": "MBA in Tourism and Hospitality Management",
+      "category": "MTHM",
       "duration": "4 Years",
-      "degree": "B.Sc. in Data Science",
+      "degree": "MBA in BTHM",
       "description": "Cutting-edge program focusing on big data, statistical analysis, machine learning, and business intelligence.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      "image": "https://i.postimg.cc/9M31rPNG/cse.jpg"
+    }
+  ],
+
+  "internationalPartners": [
+    {
+      "id": 1,
+      "name": "Google",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      "country": "USA",
+      "type": "Technology Partnership",
+      "description": "Joint initiatives in digital innovation, research collaborations, and student development through global exchange programs."
+    },
+    {
+      "id": 2,
+      "name": "Microsoft",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+      "country": "USA",
+      "type": "Cloud & AI Training",
+      "description": "Partnership focusing on cloud computing, AI upskilling, and digital transformation through Microsoft Learn and Azure programs."
+    },
+    {
+      "id": 3,
+      "name": "Amazon Web Services",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+      "country": "USA",
+      "type": "Cloud Computing",
+      "description": "Collaboration to strengthen cloud technology education, offering AWS Academy access and industry-grade certifications for students."
+    },
+    {
+      "id": 4,
+      "name": "IBM",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+      "country": "USA",
+      "type": "Enterprise Solutions",
+      "description": "Provides research partnerships and professional programs in data analytics, cybersecurity, and enterprise-level IT systems."
+    },
+    {
+      "id": 5,
+      "name": "Cisco",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg",
+      "country": "USA",
+      "type": "Networking Academy",
+      "description": "Supports students and professionals with Cisco Networking Academy, offering certifications in networking, IoT, and cybersecurity."
     },
     {
       "id": 6,
-      "title": "Digital Marketing",
-      "category": "business",
-      "duration": "4 Years",
-      "degree": "BBA in Digital Marketing",
-      "description": "Modern marketing program covering social media, SEO, content marketing, analytics, and e-commerce strategies.",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
+      "name": "Oracle",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
+      "country": "USA",
+      "type": "Database & Systems",
+      "description": "Academic collaboration promoting database management, enterprise software training, and Oracle Cloud certification programs."
     }
-  ]
+  ],
+
+  "collaborationTypes": [
+  {
+    "title": "Student Exchange Programs"
+  },
+  {
+    "title": "Faculty Exchange Programs"
+  },
+  {
+    "title": "Joint Research Collaborations"
+  },
+  {
+    "title": "Joint Academic Events and Conferences"
+  },
+  {
+    "title": "Summer and Winter Exchange Programs"
+  },
+  {
+    "title": "Industry Internships"
+  },
+  {
+    "title": "Academic Resource Sharing"
+  },
+  {
+    "title": "Joint Certifications and Degree Programs"
+  },
+  {
+    "title": "Academic Programs"
+  }
+],
+
+  "collaborationBenefits": [
+  "Global internship and job placement opportunities",
+  "Access to cutting-edge technology and tools",
+  "Industry-certified training and skill development programs",
+  "International conference participation and paper presentation",
+  "Collaborative research and innovation funding",
+  "Guest lectures and workshops from global experts",
+  "Student and faculty mobility across partner institutions",
+  "Joint academic projects and entrepreneurship incubation support",
+  "Cross-cultural learning and international exposure",
+  "Priority access to global scholarships and exchange programs"
+]
 }
