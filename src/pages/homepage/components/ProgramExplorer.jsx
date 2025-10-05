@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Icon from "../../../components/AppIcon";
-import Image from "../../../components/AppImage";
-import Button from "../../../components/ui/Button";
-import homePageData from "../../../Data/HomePage.json";
+import React, { useState, useEffect } from 'react';
+import { Calendar, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import Icon from '../../../components/AppIcon';
+import Image from '../../../components/AppImage';
+import Button from '../../../components/ui/Button';
+import homePageData from '../../../Data/HomePage.json';
 
 const ProgramExplorer = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState('all');
   const [programs, setPrograms] = useState([]);
 
   useEffect(() => {
@@ -15,9 +16,9 @@ const ProgramExplorer = () => {
   }, []);
 
   const filteredPrograms =
-    activeCategory === "all"
+    activeCategory === 'all'
       ? programs
-      : programs.filter((program) => program?.category === activeCategory);
+      : programs.filter(program => program?.category === activeCategory);
 
   return (
     <section className="py-16 bg-white">
@@ -33,16 +34,11 @@ const ProgramExplorer = () => {
             </p>
           </div>
 
-          <Link
-            to="/programs"
-            className="group inline-flex items-center gap-2 border border-primary px-6 py-3 rounded-lg font-medium text-primary transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-800 hover:to-black hover:text-white hover:shadow-lg"
-          >
-            View All Programs
-            <Icon
-              name="ArrowRight"
-              size={18}
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            />
+          <Link to="/programs" className="btn1">
+            <span>
+              View All Programs
+              <ArrowRight size={20} />
+            </span>
           </Link>
         </div>
 
@@ -52,7 +48,7 @@ const ProgramExplorer = () => {
             filteredPrograms.map((program, index) => (
               <div
                 key={program?.id}
-                className="p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-slate-100 "
+                className="p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-slate-100 "
               >
                 {/* Image Section */}
                 <div className="h-52 overflow-hidden">
@@ -68,13 +64,11 @@ const ProgramExplorer = () => {
                   <h3 className="font-headline font-bold text-2xl text-primary mb-1 group-hover:text-accent transition-colors duration-300">
                     {program?.title}
                   </h3>
-                  <p className="text-sm text-text-secondary font-medium mb-4">
-                    {program?.degree}
-                  </p>
+                  <p className="text-sm text-text-secondary font-medium mb-4">{program?.degree}</p>
 
                   <p className="text-sm text-text-secondary font-medium mb-4">
                     {program?.description?.length > 80
-                      ? program.description.slice(0, 80) + "..."
+                      ? program.description.slice(0, 80) + '...'
                       : program.description}
                   </p>
 
@@ -96,9 +90,7 @@ const ProgramExplorer = () => {
               </div>
             ))
           ) : (
-            <p className="text-center text-text-secondary col-span-3">
-              Loading programs...
-            </p>
+            <p className="text-center text-text-secondary col-span-3">Loading programs...</p>
           )}
         </div>
       </div>

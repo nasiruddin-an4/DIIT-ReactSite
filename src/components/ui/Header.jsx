@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import Icon from "../AppIcon";
-import Button from "./Button";
-import navigationData from "../../Data/homePage.json";
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import Icon from '../AppIcon';
+import Button from './Button';
+import navigationData from '../../Data/homePage.json';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,8 +17,8 @@ const Header = () => {
       setIsScrolled(currentScrollY > 20);
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleMenu = () => {
@@ -29,13 +29,13 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const isActivePath = (path) => {
+  const isActivePath = path => {
     return location?.pathname === path;
   };
 
-  const toggleMobileDropdown = (path) => {
-    setOpenMobileDropdowns((prev) =>
-      prev.includes(path) ? prev.filter((p) => p !== path) : [...prev, path]
+  const toggleMobileDropdown = path => {
+    setOpenMobileDropdowns(prev =>
+      prev.includes(path) ? prev.filter(p => p !== path) : [...prev, path]
     );
   };
 
@@ -43,23 +43,17 @@ const Header = () => {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-header transition-all duration-500 ease-out ${
-          isScrolled
-            ? "bg-white  shadow-lg border-b border-slate-200/80"
-            : "bg-white"
+          isScrolled ? 'bg-white  shadow-lg border-b border-slate-200/80' : 'bg-white'
         }`}
       >
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between h-20 px-6 lg:px-0">
             {/* Logo Section with Enhanced Animation */}
-            <Link
-              to="/homepage"
-              className="flex items-center space-x-3 group"
-              onClick={closeMenu}
-            >
+            <Link to="/homepage" className="flex items-center space-x-3 group" onClick={closeMenu}>
               <div className="relative">
                 <div
                   className={`w-10 h-10 bg-hero-gradient rounded-md flex items-center justify-center shadow-brand transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-xl ${
-                    isScrolled ? "scale-90" : "scale-100"
+                    isScrolled ? 'scale-90' : 'scale-100'
                   }`}
                 >
                   <Icon
@@ -82,9 +76,7 @@ const Header = () => {
                   key={item.name}
                   className="relative group"
                   style={{
-                    animation: isScrolled
-                      ? `fadeInUp 0.4s ease-out ${index * 0.05}s both`
-                      : "none",
+                    animation: isScrolled ? `fadeInUp 0.4s ease-out ${index * 0.05}s both` : 'none',
                   }}
                 >
                   {item.path ? (
@@ -92,8 +84,8 @@ const Header = () => {
                       to={item.path}
                       className={`flex items-center space-x-2 px-4 py-2 rounded-md font-cta font-medium text-sm transition-all duration-300 relative overflow-hidden ${
                         isActivePath(item.path)
-                          ? "text-primary bg-primary/10 shadow-sm"
-                          : "text-text-secondary hover:text-ring"
+                          ? 'text-primary bg-primary/10 shadow-sm'
+                          : 'text-text-secondary hover:text-ring'
                       }`}
                     >
                       <span className="relative z-10">{item.name}</span>
@@ -124,9 +116,7 @@ const Header = () => {
                               key={subItem.name}
                               className="group/sub relative"
                               style={{
-                                animation: `fadeInLeft 0.3s ease-out ${
-                                  subIndex * 0.05
-                                }s both`,
+                                animation: `fadeInLeft 0.3s ease-out ${subIndex * 0.05}s both`,
                               }}
                             >
                               <button className="w-full flex items-center justify-between px-4 py-2.5 text-md font-medium text-gray-600 hover:text-primary hover:bg-gradient-to-r hover:from-slate-100 hover:to-transparent transition-all duration-200">
@@ -139,23 +129,21 @@ const Header = () => {
                               </button>
                               <div className="absolute left-full top-0 ml-0.5 w-64 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300">
                                 <div className="relative py-2 mt-0 ml-2 bg-white rounded-md shadow-2xl border border-slate-200/80 backdrop-blur-xl">
-                                  {subItem.subDropdown.map(
-                                    (program, programIndex) => (
-                                      <Link
-                                        key={program.path}
-                                        to={program.path}
-                                        onClick={closeMenu}
-                                        className="block px-4 py-2.5 text-md font-medium text-gray-600 hover:text-primary hover:bg-gradient-to-r hover:from-slate-100 hover:to-transparent hover:ml-1 transition-all duration-200"
-                                        style={{
-                                          animation: `fadeInLeft 0.3s ease-out ${
-                                            programIndex * 0.05
-                                          }s both`,
-                                        }}
-                                      >
-                                        {program.name}
-                                      </Link>
-                                    )
-                                  )}
+                                  {subItem.subDropdown.map((program, programIndex) => (
+                                    <Link
+                                      key={program.path}
+                                      to={program.path}
+                                      onClick={closeMenu}
+                                      className="block px-4 py-2.5 text-md font-medium text-gray-600 hover:text-primary hover:bg-gradient-to-r hover:from-slate-100 hover:to-transparent hover:ml-1 transition-all duration-200"
+                                      style={{
+                                        animation: `fadeInLeft 0.3s ease-out ${
+                                          programIndex * 0.05
+                                        }s both`,
+                                      }}
+                                    >
+                                      {program.name}
+                                    </Link>
+                                  ))}
                                 </div>
                               </div>
                             </div>
@@ -163,31 +151,21 @@ const Header = () => {
                             <Link
                               key={subItem.path}
                               to={subItem.path}
-                              target={subItem.external ? "_blank" : undefined}
-                              rel={
-                                subItem.external
-                                  ? "noopener noreferrer"
-                                  : undefined
-                              }
+                              target={subItem.external ? '_blank' : undefined}
+                              rel={subItem.external ? 'noopener noreferrer' : undefined}
                               onClick={closeMenu}
                               className={`flex items-center space-x-3 px-4 py-2.5 text-md font-medium transition-all duration-200 ${
                                 isActivePath(subItem.path)
-                                  ? "text-primary bg-primary/10"
-                                  : "text-gray-600 hover:text-primary hover:bg-gradient-to-r hover:from-slate-100 hover:to-transparent hover:ml-2 transition-all duration-200"
+                                  ? 'text-primary bg-primary/10'
+                                  : 'text-gray-600 hover:text-primary hover:bg-gradient-to-r hover:from-slate-100 hover:to-transparent hover:ml-2 transition-all duration-200'
                               }`}
                               style={{
-                                animation: `fadeInLeft 0.3s ease-out ${
-                                  subIndex * 0.05
-                                }s both`,
+                                animation: `fadeInLeft 0.3s ease-out ${subIndex * 0.05}s both`,
                               }}
                             >
                               <span>{subItem.name}</span>
                               {subItem.external && (
-                                <Icon
-                                  name="ExternalLink"
-                                  size={12}
-                                  className="ml-1.5 opacity-75"
-                                />
+                                <Icon name="ExternalLink" size={12} className="ml-1.5 opacity-75" />
                               )}
                             </Link>
                           )
@@ -199,18 +177,37 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* CTA Buttons with Pulse Effect */}
+            {/* CTA Buttons with Pulse + Gradient Sweep Animation */}
             <div className="hidden lg:flex items-center space-x-3">
               <Button
                 variant="default"
                 size="sm"
-                iconName="UserPlus"
-                iconPosition="left"
-                iconSize={16}
-                className="bg-ring hover:bg-accent/90 shadow-brand hover:shadow-brand-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 relative overflow-hidden group"
+                className="relative overflow-hidden bg-blue-700 text-white font-medium rounded-md transition-all duration-500 group p-5 hover:bg-gradient-to-r hover:from-blue-800 hover:to-black hover:text-white hover:shadow-lg"
               >
-                <span className="relative z-10">Apply Now</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                {/* Hover background light sweep */}
+                <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-transparent translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-700 ease-out"></span>
+
+                {/* Button content */}
+                <span className="relative z-10 flex items-center gap-2 transition-all duration-300 group-hover:translate-x-1">
+                  Apply Now
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+
+                {/* Subtle pulse effect on hover */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-900 opacity-0 group-hover:opacity-30 blur-xl animate-pulse transition-all duration-700"></div>
               </Button>
             </div>
 
@@ -221,11 +218,9 @@ const Header = () => {
               aria-label="Toggle menu"
             >
               <Icon
-                name={isMenuOpen ? "X" : "Menu"}
+                name={isMenuOpen ? 'X' : 'Menu'}
                 size={24}
-                className={`transition-all duration-300 ${
-                  isMenuOpen ? "rotate-90" : "rotate-0"
-                }`}
+                className={`transition-all duration-300 ${isMenuOpen ? 'rotate-90' : 'rotate-0'}`}
               />
             </button>
           </div>
@@ -234,8 +229,8 @@ const Header = () => {
           <div
             className={`lg:hidden transition-all duration-500 ease-out ${
               isMenuOpen
-                ? "max-h-[calc(100vh-5rem)] opacity-100 visible overflow-y-auto"
-                : "max-h-0 opacity-0 invisible overflow-hidden"
+                ? 'max-h-[calc(100vh-5rem)] opacity-100 visible overflow-y-auto'
+                : 'max-h-0 opacity-0 invisible overflow-hidden'
             }`}
           >
             <div className="px-6 py-4 bg-white/98 backdrop-blur-xl border-t border-slate-200/80">
@@ -248,7 +243,7 @@ const Header = () => {
                     style={{
                       animation: isMenuOpen
                         ? `slideInRight 0.4s ease-out ${index * 0.1}s both`
-                        : "none",
+                        : 'none',
                     }}
                   >
                     <div className="flex items-center">
@@ -258,8 +253,8 @@ const Header = () => {
                           onClick={closeMenu}
                           className={`flex-1 flex items-center space-x-3 px-4 py-3 rounded-md font-cta font-medium text-sm transition-all duration-300 ${
                             isActivePath(item.path)
-                              ? "text-primary bg-primary/10 shadow-sm scale-[1.02]"
-                              : "text-text-secondary hover:text-primary hover:bg-slate-50 hover:translate-x-1"
+                              ? 'text-primary bg-primary/10 shadow-sm scale-[1.02]'
+                              : 'text-text-secondary hover:text-primary hover:bg-slate-50 hover:translate-x-1'
                           }`}
                         >
                           <span>{item.name}</span>
@@ -279,9 +274,7 @@ const Header = () => {
                             name="ChevronDown"
                             size={16}
                             className={`transform transition-transform duration-300 ${
-                              openMobileDropdowns.includes(item.name)
-                                ? "rotate-180"
-                                : ""
+                              openMobileDropdowns.includes(item.name) ? 'rotate-180' : ''
                             }`}
                           />
                         </button>
@@ -292,38 +285,34 @@ const Header = () => {
                       <div
                         className={`space-y-1 pl-4 transition-all duration-300 ${
                           openMobileDropdowns.includes(item.name)
-                            ? "max-h-screen opacity-100 visible"
-                            : "max-h-0 opacity-0 invisible overflow-hidden"
+                            ? 'max-h-screen opacity-100 visible'
+                            : 'max-h-0 opacity-0 invisible overflow-hidden'
                         }`}
                       >
-                        {item.dropdown.map((subItem) =>
+                        {item.dropdown.map(subItem =>
                           subItem.subDropdown ? (
                             <div key={subItem.name} className="space-y-1">
                               <div
                                 className="flex items-center justify-between px-4 py-2 text-sm font-medium text-text-secondary hover:text-primary transition-all duration-200 cursor-pointer"
-                                onClick={() =>
-                                  toggleMobileDropdown(subItem.name)
-                                }
+                                onClick={() => toggleMobileDropdown(subItem.name)}
                               >
                                 <span>{subItem.name}</span>
                                 <Icon
                                   name="ChevronDown"
                                   size={14}
                                   className={`transform transition-transform duration-300 ${
-                                    openMobileDropdowns.includes(subItem.name)
-                                      ? "rotate-180"
-                                      : ""
+                                    openMobileDropdowns.includes(subItem.name) ? 'rotate-180' : ''
                                   }`}
                                 />
                               </div>
                               <div
                                 className={`pl-4 space-y-1 transition-all duration-300 ${
                                   openMobileDropdowns.includes(subItem.name)
-                                    ? "max-h-screen opacity-100 visible"
-                                    : "max-h-0 opacity-0 invisible overflow-hidden"
+                                    ? 'max-h-screen opacity-100 visible'
+                                    : 'max-h-0 opacity-0 invisible overflow-hidden'
                                 }`}
                               >
-                                {subItem.subDropdown.map((program) => (
+                                {subItem.subDropdown.map(program => (
                                   <Link
                                     key={program.path}
                                     to={program.path}
@@ -339,17 +328,13 @@ const Header = () => {
                             <Link
                               key={subItem.path}
                               to={subItem.path}
-                              target={subItem.external ? "_blank" : undefined}
-                              rel={
-                                subItem.external
-                                  ? "noopener noreferrer"
-                                  : undefined
-                              }
+                              target={subItem.external ? '_blank' : undefined}
+                              rel={subItem.external ? 'noopener noreferrer' : undefined}
                               onClick={closeMenu}
                               className={`flex items-center space-x-3 px-4 py-2 rounded-md font-cta font-medium text-sm transition-all duration-300 ${
                                 isActivePath(subItem.path)
-                                  ? "text-primary bg-primary/10 shadow-sm scale-[1.02]"
-                                  : "text-text-secondary/80 hover:text-primary hover:bg-slate-50 hover:translate-x-2"
+                                  ? 'text-primary bg-primary/10 shadow-sm scale-[1.02]'
+                                  : 'text-text-secondary/80 hover:text-primary hover:bg-slate-50 hover:translate-x-2'
                               }`}
                             >
                               <div className="w-1.5 h-1.5 rounded-md bg-current opacity-50"></div>
@@ -374,9 +359,7 @@ const Header = () => {
               <div
                 className="mt-6 pt-4 border-t border-slate-200 space-y-3"
                 style={{
-                  animation: isMenuOpen
-                    ? "fadeInUp 0.5s ease-out 0.3s both"
-                    : "none",
+                  animation: isMenuOpen ? 'fadeInUp 0.5s ease-out 0.3s both' : 'none',
                 }}
               >
                 <Button

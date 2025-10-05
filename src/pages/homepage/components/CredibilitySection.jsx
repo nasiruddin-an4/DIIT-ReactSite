@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   Users,
   Briefcase,
@@ -8,13 +8,13 @@ import {
   Quote,
   ChevronLeft,
   ChevronRight,
-} from "lucide-react";
-import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import HomePageData from "../../../Data/homePage.json";
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import HomePageData from '../../../Data/homePage.json';
 
 const CredibilitySection = () => {
   const [currentBenefitIndex, setCurrentBenefitIndex] = useState(0);
@@ -39,7 +39,7 @@ const CredibilitySection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentBenefitIndex((prev) => (prev + 1) % collaborationBenefits.length);
+      setCurrentBenefitIndex(prev => (prev + 1) % collaborationBenefits.length);
     }, 3500);
 
     return () => clearInterval(interval);
@@ -54,11 +54,8 @@ const CredibilitySection = () => {
             National & International <span className="text-yellow-400">MoUs</span>
           </h2>
 
-          <Link
-            to="/mou"
-            className="group inline-flex items-center gap-2 border border-white/70 text-white px-6 py-3 rounded-lg font-medium hover:bg-gradient-to-r hover:bg-gradient-to-r hover:from-blue-800 hover:to-black hover:text-white hover:shadow-lg transition-all duration-300"
-          >
-            Explore MoUs
+          <Link to="/mou" className="btn2">
+            <span>Explore MoUs</span>
             <ArrowRight
               size={20}
               className="transition-transform duration-300 group-hover:translate-x-1"
@@ -85,8 +82,8 @@ const CredibilitySection = () => {
               spaceBetween={0}
               slidesPerView={4}
               navigation={{
-                nextEl: ".swiper-next",
-                prevEl: ".swiper-prev",
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
               }}
               autoplay={{
                 delay: 3000,
@@ -100,11 +97,11 @@ const CredibilitySection = () => {
               }}
               className="pb-12"
             >
-              {partners.map((partner) => (
+              {partners.map(partner => (
                 <SwiperSlide key={partner.id}>
                   <Link
                     to={`/partners/${partner.id}`}
-                    className="block text-white transition-all duration-300"
+                    className="block text-white transition-all duration-300 hover:shadow-lg hover:pb-2"
                   >
                     <div className="flex flex-col h-full">
                       <div className="flex items-center justify-center h-28 bg-white rounded-lg mb-4 p-3">
@@ -133,7 +130,6 @@ const CredibilitySection = () => {
               </button>
             </div>
           </div>
-
         </div>
 
         {/* Benefits Section */}
@@ -143,15 +139,17 @@ const CredibilitySection = () => {
               <div
                 key={idx}
                 className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-[cubic-bezier(0.4,0,0.2,1)]
-          ${idx === currentBenefitIndex
-                    ? "opacity-100 translate-y-0 scale-100"
-                    : "opacity-0 translate-y-6 scale-90"
-                  }`}
+          ${
+            idx === currentBenefitIndex
+              ? 'opacity-100 translate-y-0 scale-100'
+              : 'opacity-0 translate-y-6 scale-90'
+          }`}
               >
                 <div className="flex gap-4 items-center">
                   <Quote
-                    className={`w-14 h-14 text-blue-200 transition-transform duration-700 ${idx === currentBenefitIndex ? "rotate-180" : "-rotate-0"
-                      }`}
+                    className={`w-14 h-14 text-blue-200 transition-transform duration-700 ${
+                      idx === currentBenefitIndex ? 'rotate-180' : '-rotate-0'
+                    }`}
                   />
                   <h2 className="text-white font-semibold text-2xl md:text-4xl leading-snug transform transition-all duration-1000">
                     {benefit}
@@ -168,15 +166,15 @@ const CredibilitySection = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentBenefitIndex(idx)}
-                className={`transition-all duration-300 rounded-full ${idx === currentBenefitIndex
-                    ? "w-8 h-2 bg-white"
-                    : "w-2 h-2 bg-white/40 hover:bg-white/60"
-                  }`}
+                className={`transition-all duration-300 rounded-full ${
+                  idx === currentBenefitIndex
+                    ? 'w-8 h-2 bg-white'
+                    : 'w-2 h-2 bg-white/40 hover:bg-white/60'
+                }`}
               />
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

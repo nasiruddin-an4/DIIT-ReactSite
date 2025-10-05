@@ -1,13 +1,14 @@
-import React from "react";
-import Header from "../../components/ui/Header";
-import HeroSection from "./components/HeroSection";
-import StatsSection from "./components/StatsSection";
-import ProgramExplorer from "./components/ProgramExplorer";
-import NewsSection from "./components/NewsSection";
-import VirtualTourSection from "./components/VirtualTourSection";
-import CredibilitySection from "./components/CredibilitySection";
-import Documentary from "./components/Documentary";
-import Footer from "..//..//components/ui/Footer";
+import React from 'react';
+import Header from '../../components/ui/Header';
+import HeroSection from './components/HeroSection';
+import StatsSection from './components/StatsSection';
+import ProgramExplorer from './components/ProgramExplorer';
+import NewsSection from './components/NewsSection';
+import VirtualTourSection from './components/VirtualTourSection';
+import CredibilitySection from './components/CredibilitySection';
+import AlumniWords from './components/AlumniWords';
+import Documentary from './components/Documentary';
+import Footer from '..//..//components/ui/Footer';
 
 const Homepage = () => {
   return (
@@ -30,13 +31,8 @@ const Homepage = () => {
         {/* Real-time News & Achievements */}
         <NewsSection />
 
-        {/* Documentary Section */}
-        <Documentary />
-
-        {/* Virtual Campus Tour */}
-        <VirtualTourSection />
-        
-        
+        {/* Words of the Alumni */}
+        <AlumniWords />
       </main>
       {/* Footer */}
       <Footer />
