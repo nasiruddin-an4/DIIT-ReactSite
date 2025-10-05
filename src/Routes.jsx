@@ -10,6 +10,9 @@ import Alumni from "./pages/alumni";
 import Faculty from "./pages/faculty";
 import About from "./pages/about";
 import Homepage from "./pages/homepage";
+import NewsAndEventsPage from "./pages/news-and-events";
+import NewsDetail from "./pages/news-and-events/NewsDetail";
+import EventDetail from "./pages/news-and-events/EventDetail";
 
 const Routes = () => {
   return (
@@ -24,6 +27,9 @@ const Routes = () => {
           <Route path="/alumni" element={<Alumni />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/about" element={<About />} />
+          <Route path="/news-and-events" element={<NewsAndEventsPage />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
+          <Route path="/events/:id" element={<EventDetail />} />
           <Route path="/homepage" element={<Homepage />} />
           <Route path="*" element={<NotFound />} />
         </RouterRoutes>

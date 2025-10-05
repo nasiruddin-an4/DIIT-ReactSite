@@ -1,0 +1,237 @@
+{
+  "news": [
+    {
+      "id": "n1",
+      "type": "news",
+      "category": "academic",
+      "title": "DIIT Students Win National Programming Contest",
+      "date": "2024-02-15",
+      "image": "/images/news/programming-contest.jpg",
+      "excerpt": "Our Computer Science team secured first place in the Bangladesh National Programming Championship 2024.",
+      "stats": { "views": 2400, "likes": 180 }
+    },
+    {
+      "id": "n2",
+      "type": "news",
+      "category": "research",
+      "title": "Breakthrough in AI-Powered Healthcare Solutions",
+      "date": "2024-03-05",
+      "image": "/images/news/ai-healthcare.jpg",
+      "excerpt": "Faculty research team publishes groundbreaking paper on machine learning applications in healthcare diagnostics.",
+      "stats": { "views": 3100, "likes": 250 }
+    },
+    {
+      "id": "n3",
+      "type": "news",
+      "category": "innovation",
+      "title": "Students Develop Smart Waste Management System",
+      "date": "2024-04-10",
+      "image": "/images/news/smart-waste.jpg",
+      "excerpt": "A group of DIIT engineering students created an IoT-based waste collection solution for smart cities.",
+      "stats": { "views": 1900, "likes": 160 }
+    },
+    {
+      "id": "n4",
+      "type": "news",
+      "category": "achievement",
+      "title": "DIIT Wins International Design Award 2024",
+      "date": "2024-05-02",
+      "image": "/images/news/design-award.jpg",
+      "excerpt": "The Visual Communication team from DIIT received international recognition for their creative design work.",
+      "stats": { "views": 2700, "likes": 210 }
+    },
+    {
+      "id": "n5",
+      "type": "news",
+      "category": "partnership",
+      "title": "DIIT Signs MoU with Tech Innovators Ltd.",
+      "date": "2024-06-08",
+      "image": "/images/news/mou-tech.jpg",
+      "excerpt": "A new academic collaboration with Tech Innovators Ltd. will expand student internship opportunities.",
+      "stats": { "views": 1800, "likes": 140 }
+    },
+    {
+      "id": "n6",
+      "type": "news",
+      "category": "campus",
+      "title": "New Innovation Lab Inaugurated at DIIT",
+      "date": "2024-07-12",
+      "image": "/images/news/innovation-lab.jpg",
+      "excerpt": "The new Innovation Lab offers cutting-edge equipment for robotics, AI, and automation research.",
+      "stats": { "views": 3500, "likes": 270 }
+    },
+    {
+      "id": "n7",
+      "type": "news",
+      "category": "student-life",
+      "title": "Annual Cultural Fest 2024 Brings Color to Campus",
+      "date": "2024-08-22",
+      "image": "/images/news/cultural-fest.jpg",
+      "excerpt": "Students showcased their talents through music, art, and performances at the annual DIIT Cultural Fest.",
+      "stats": { "views": 2300, "likes": 190 }
+    },
+    {
+      "id": "n8",
+      "type": "news",
+      "category": "research",
+      "title": "DIIT Researchers Publish in IEEE Journal",
+      "date": "2024-09-05",
+      "image": "/images/news/ieee-research.jpg",
+      "excerpt": "Two DIIT faculty members co-authored a research paper in IEEE Transactions on Artificial Intelligence.",
+      "stats": { "views": 2900, "likes": 220 }
+    },
+    {
+      "id": "n9",
+      "type": "news",
+      "category": "achievement",
+      "title": "DIIT Alumni Featured in Forbes 30 Under 30",
+      "date": "2024-10-10",
+      "image": "/images/news/forbes-alumni.jpg",
+      "excerpt": "Our alumnus Rahat Karim has been recognized by Forbes for his innovation in digital technology.",
+      "stats": { "views": 4100, "likes": 360 }
+    },
+    {
+      "id": "n10",
+      "type": "news",
+      "category": "social-impact",
+      "title": "DIIT Volunteers Support Rural Education Program",
+      "date": "2024-11-18",
+      "image": "/images/news/rural-education.jpg",
+      "excerpt": "DIIT students launched an outreach initiative to provide digital literacy workshops in rural schools.",
+      "stats": { "views": 2100, "likes": 175 }
+    },
+    {
+      "id": "n11",
+      "type": "news",
+      "category": "social-impact",
+      "title": "Support Rural Education Program leset ",
+      "date": "2024-11-18",
+      "image": "/images/news/rural-education.jpg",
+      "excerpt": "DIIT students launched an outreach initiative to provide digital literacy workshops in rural schools.",
+      "stats": { "views": 2100, "likes": 175 }
+    }
+  ],
+
+  "events": [
+    {
+      "id": "e1",
+      "type": "event",
+      "category": "workshop",
+      "title": "AI & Machine Learning Workshop 2024",
+      "date": "2024-03-01",
+      "time": "10:00 AM - 4:00 PM",
+      "venue": "DIIT Auditorium",
+      "image": "/images/events/ai-workshop.jpg",
+      "excerpt": "Join us for a comprehensive workshop on AI and ML fundamentals.",
+      "stats": { "registered": 150, "maxCapacity": 200 }
+    },
+    {
+      "id": "e2",
+      "type": "event",
+      "category": "conference",
+      "title": "Tech Innovation Summit 2024",
+      "date": "2024-04-20",
+      "time": "9:00 AM - 6:00 PM",
+      "venue": "DIIT Convention Hall",
+      "image": "/images/events/tech-summit.jpg",
+      "excerpt": "An annual summit featuring talks from global tech leaders and innovators.",
+      "stats": { "registered": 500, "maxCapacity": 600 }
+    },
+    {
+      "id": "e3",
+      "type": "event",
+      "category": "cultural",
+      "title": "Spring Cultural Night 2024",
+      "date": "2024-03-25",
+      "time": "5:00 PM - 9:00 PM",
+      "venue": "DIIT Open Ground",
+      "image": "/images/events/spring-night.jpg",
+      "excerpt": "An evening of performances, art, and celebration of student life.",
+      "stats": { "registered": 350, "maxCapacity": 400 }
+    },
+    {
+      "id": "e4",
+      "type": "event",
+      "category": "academic",
+      "title": "Seminar on Blockchain & Cybersecurity",
+      "date": "2024-05-10",
+      "time": "11:00 AM - 2:00 PM",
+      "venue": "Room 204, CSE Building",
+      "image": "/images/events/blockchain-seminar.jpg",
+      "excerpt": "Learn from experts about blockchain security and real-world use cases.",
+      "stats": { "registered": 120, "maxCapacity": 150 }
+    },
+    {
+      "id": "e5",
+      "type": "event",
+      "category": "career",
+      "title": "DIIT Career Fair 2024",
+      "date": "2024-06-15",
+      "time": "9:00 AM - 5:00 PM",
+      "venue": "DIIT Campus Plaza",
+      "image": "/images/events/career-fair.jpg",
+      "excerpt": "Meet recruiters and explore career opportunities with top IT companies.",
+      "stats": { "registered": 800, "maxCapacity": 1000 }
+    },
+    {
+      "id": "e6",
+      "type": "event",
+      "category": "sports",
+      "title": "Inter-Department Football Championship",
+      "date": "2024-07-05",
+      "time": "3:00 PM - 7:00 PM",
+      "venue": "DIIT Sports Ground",
+      "image": "/images/events/football-championship.jpg",
+      "excerpt": "Departments compete for the 2024 Football Championship trophy.",
+      "stats": { "registered": 180, "maxCapacity": 200 }
+    },
+    {
+      "id": "e7",
+      "type": "event",
+      "category": "research",
+      "title": "Student Research Symposium 2024",
+      "date": "2024-08-12",
+      "time": "10:00 AM - 3:00 PM",
+      "venue": "Main Auditorium",
+      "image": "/images/events/research-symposium.jpg",
+      "excerpt": "Undergraduate and postgraduate students present their research findings.",
+      "stats": { "registered": 220, "maxCapacity": 300 }
+    },
+    {
+      "id": "e8",
+      "type": "event",
+      "category": "community",
+      "title": "Blood Donation Drive 2024",
+      "date": "2024-09-18",
+      "time": "9:00 AM - 2:00 PM",
+      "venue": "Medical Unit, DIIT",
+      "image": "/images/events/blood-donation.jpg",
+      "excerpt": "Join us in saving lives by donating blood for those in need.",
+      "stats": { "registered": 130, "maxCapacity": 200 }
+    },
+    {
+      "id": "e9",
+      "type": "event",
+      "category": "academic",
+      "title": "Hackathon 2024: Code for Change",
+      "date": "2024-10-20",
+      "time": "8:00 AM - 8:00 PM",
+      "venue": "DIIT Innovation Lab",
+      "image": "/images/events/hackathon.jpg",
+      "excerpt": "Teams will compete to solve real-world challenges with innovative tech.",
+      "stats": { "registered": 250, "maxCapacity": 300 }
+    },
+    {
+      "id": "e10",
+      "type": "event",
+      "category": "awards",
+      "title": "Annual DIIT Excellence Awards 2024",
+      "date": "2024-12-01",
+      "time": "6:00 PM - 10:00 PM",
+      "venue": "DIIT Auditorium",
+      "image": "/images/events/excellence-awards.jpg",
+      "excerpt": "Celebrating outstanding students, faculty, and staff achievements of the year.",
+      "stats": { "registered": 400, "maxCapacity": 500 }
+    }
+  ]
+}
