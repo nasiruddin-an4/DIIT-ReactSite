@@ -9,6 +9,8 @@ import CredibilitySection from './components/CredibilitySection';
 import AlumniWords from './components/AlumniWords';
 import Documentary from './components/Documentary';
 import Footer from '..//..//components/ui/Footer';
+import LogoMarquee from './components/LogoMarquee';
+import Alumnius from './components/AlumniCarousel';
 
 const Homepage = () => {
   return (
@@ -32,7 +34,13 @@ const Homepage = () => {
         <NewsSection />
 
         {/* Words of the Alumni */}
-        <AlumniWords />
+        {/* <AlumniWords /> */}
+
+        {/* Alumnus Section */}
+        <Alumnius />
+
+        {/* Logo Marquee Section */}
+        <LogoMarquee />
       </main>
       {/* Footer */}
       <Footer />

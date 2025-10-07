@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export default function Footer() {
   return (
     <div>
-      <footer className="bg-primary text-white py-12">
+      <footer className="bg-[#061738] text-white py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Brand Section */}
@@ -13,18 +13,13 @@ export default function Footer() {
                   <span className="text-white font-bold text-xl">D</span>
                 </div>
                 <div>
-                  <h3 className="font-headline font-bold text-xl">
-                    DIIT Digital Campus
-                  </h3>
-                  <p className="text-blue-200 text-sm">
-                    Excellence Through Innovation
-                  </p>
+                  <h3 className="font-headline font-bold text-xl">DIIT Digital Campus</h3>
+                  <p className="text-blue-200 text-sm">Excellence Through Innovation</p>
                 </div>
               </div>
               <p className="text-blue-200 leading-relaxed mb-6 max-w-md">
-                Transforming potential into professional excellence through
-                quality education, industry partnerships, and innovative
-                learning experiences.
+                Transforming potential into professional excellence through quality education,
+                industry partnerships, and innovative learning experiences.
               </p>
               <div className="flex space-x-4">
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-200 cursor-pointer">
@@ -44,9 +39,7 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-headline font-semibold text-lg mb-4">
-                Quick Links
-              </h4>
+              <h4 className="font-headline font-semibold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-3">
                 <li>
                   <a
@@ -93,9 +86,7 @@ export default function Footer() {
 
             {/* Contact Info */}
             <div>
-              <h4 className="font-headline font-semibold text-lg mb-4">
-                Contact
-              </h4>
+              <h4 className="font-headline font-semibold text-lg mb-4">Contact</h4>
               <div className="space-y-3 text-blue-200">
                 <p>
                   Dhanmondi, Dhaka-1205
@@ -119,8 +110,7 @@ export default function Footer() {
           {/* Bottom Bar */}
           <div className="border-t border-blue-800 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
             <p className="text-blue-200 text-sm">
-              © {new Date()?.getFullYear()} DIIT Digital Campus. All rights
-              reserved.
+              © {new Date()?.getFullYear()} DIIT Digital Campus. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a

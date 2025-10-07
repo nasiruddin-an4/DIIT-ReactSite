@@ -17,7 +17,7 @@ const AlumniWords = () => {
       company: 'Tech Company',
       rating: 5,
       quote:
-        'DIIT provided me with the perfect blend of theoretical knowledge and practical skills that helped me excel in my career.',
+        'I am Fahmida Akter, student of the BBA 7th Batch, Major in Finance and session 2006-2007. I am incredibly happy that I chose this institute for my studies. Every success depends on the background. Constructing a strong building always needs reliable ',
       image:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face',
     },
@@ -29,7 +29,7 @@ const AlumniWords = () => {
       company: 'StartUp',
       rating: 5,
       quote:
-        'The entrepreneurial spirit fostered at DIIT gave me the confidence to pursue my dreams and build something meaningful.',
+        'I am Saleh Ahmad Shakil, a student of the CSE 15thBatch. I am incredibly happy that I chose this institute for my studies. Every success depends on the background. Constructing a strong building always needs reliable foundations.',
       image:
         'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
     },
@@ -149,7 +149,7 @@ const AlumniWords = () => {
         >
           {testimonials.map(testimonial => (
             <SwiperSlide key={testimonial.id}>
-              <div className="h-[400px] px-2 mb-8">
+              <div className="h-[500px] px-2 mb-8">
                 <div className="relative h-full rounded-3xl p-8 border border-slate-700/50">
                   {/* Content */}
                   <div className="relative z-10 h-full flex flex-col justify-between">
